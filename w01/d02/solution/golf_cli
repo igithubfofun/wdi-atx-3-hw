@@ -1,0 +1,360 @@
+$ ls
+cans.txt	fridge/		pantry/
+metelpatel ~/Desktop/kitchen
+$ rm cans.txt
+cans.txt
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/	pantry/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 14 files
+metelpatel ~/Desktop/kitchen
+$ mv pantry/crisper-drawer/ fridge/
+pantry/crisper-drawer/ -> fridge/crisper-drawer/
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/	pantry/
+metelpatel ~/Desktop/kitchen
+$ touch fridge/crisper-drawer/apples.txt
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/	pantry/
+metelpatel ~/Desktop/kitchen
+$ cd fridge/
+metelpatel ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/	diapers.txt	freezer/	milk.txt	trashcan/
+metelpatel ~/Desktop/kitchen/fridge
+$ cd crisper-drawer
+metelpatel ~/Desktop/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt	lettuce.txt
+metelpatel ~/Desktop/kitchen/fridge/crisper-drawer
+$ tree
+.
+├── apples.txt
+└── lettuce.txt
+
+0 directories, 2 files
+metelpatel ~/Desktop/kitchen/fridge/crisper-drawer
+$ cd ../..
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 15 files
+metelpatel ~/Desktop/kitchen
+$ rm fridge/diapers.txt fridge/trashcan/sink/delete-me.txt 
+fridge/diapers.txt
+fridge/trashcan/sink/delete-me.txt
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/sink/ fridge/
+fridge/trashcan/sink/ -> fridge/sink/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   ├── sink
+│   │   ├── clean-dishes.txt
+│   │   └── dirty-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ fridge/
+mv: fridge/trashcan/ and fridge/trashcan/ are identical
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ fridge/
+mv: fridge/trashcan/ and fridge/trashcan/ are identical
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ mv ..
+fridge/trashcan/ -> ../trashcan/
+mv: rename mv to ../mv: No such file or directory
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ kitchen/
+mv: rename fridge/trashcan/ to kitchen/: No such file or directory
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── sink
+│       ├── clean-dishes.txt
+│       └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+5 directories, 10 files
+metelpatel ~/Desktop/kitchen
+$ cd ..
+metelpatel ~/Desktop
+$ ls
+TomorrowNight.terminal	test/			trashcan/
+kitchen/		test5/
+metelpatel ~/Desktop
+$ mv trashcan/ kitchen/
+trashcan/ -> kitchen/trashcan/
+metelpatel ~/Desktop
+$ cd kitchen
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/		pantry/		trashcan/
+metelpatel ~/Desktop/kitchen
+$ mv trashcan/ fridge/
+trashcan/ -> fridge/trashcan/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   ├── sink
+│   │   ├── clean-dishes.txt
+│   │   └── dirty-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ Desktop/kitchen
+mv: rename fridge/trashcan/ to Desktop/kitchen: No such file or directory
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/	pantry/
+metelpatel ~/Desktop/kitchen
+$ cd ..
+metelpatel ~/Desktop
+$ ls
+TomorrowNight.terminal	kitchen/		test/			test5/
+metelpatel ~/Desktop
+$ cd kitchen/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   ├── sink
+│   │   ├── clean-dishes.txt
+│   │   └── dirty-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ mv fridge/trashcan/ .
+fridge/trashcan/ -> ./trashcan/
+metelpatel ~/Desktop/kitchen
+$ ls
+fridge/		pantry/		trashcan/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── sink
+│       ├── clean-dishes.txt
+│       └── dirty-dishes.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ mv fridge/sink/ .
+fridge/sink/ -> ./sink/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 13 files
+metelpatel ~/Desktop/kitchen
+$ rm fridge/freezer/couch.txt 
+fridge/freezer/couch.txt
+metelpatel ~/Desktop/kitchen
+$ cd sink/
+metelpatel ~/Desktop/kitchen/sink
+$ mkdir drying-rack
+metelpatel ~/Desktop/kitchen/sink
+$ mv clean-dishes.txt drying-rack/
+clean-dishes.txt -> drying-rack/clean-dishes.txt
+metelpatel ~/Desktop/kitchen/sink
+$ tree
+.
+├── dirty-dishes.txt
+└── drying-rack
+    └── clean-dishes.txt
+
+1 directory, 2 files
+metelpatel ~/Desktop/kitchen/sink
+$ cd ../..
+metelpatel ~/Desktop
+$ cd kitchen/
+metelpatel ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+metelpatel ~/Desktop/kitchen
+$ 
