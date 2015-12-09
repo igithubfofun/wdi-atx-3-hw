@@ -1,0 +1,63 @@
+- Welcome to Utopia! Our land is in grave danger! Please helps us ... wait... what's your name?
+  - `Metel`
+- A pleasure to meet you, `Metel`. I see that you are a ____
+    - `Human`
+        - Ah! but of course! What type of two handed weapon shall thou muster?
+            - Sword
+                - Quite the choice! Quick here comes an ogre! (strike, run, cry)
+                    - strike
+                        - You strike the ogre in half, and save Utopia!
+                    - run
+                        - You run like the coward you are, and Utopia is defeated...
+                    - cry
+                        - You cry like a baby and the ogre kills you, Utopia is defeated...
+            - Axe
+                - Ah! the most lethal of them all! Here comes an ogre now! Slash him! (slash, run, cry)
+                    - slash
+                        - Great strike! The ogre falls to the floor, and Utopia is saved!
+                    - run
+                        - You run like the coward you are, and Utopia is defeated...
+                    - cry
+                        - You cry like a baby and the ogre kills you, Utopia is defeated...
+    - `Elf`
+        - Ah yes, you do seem to be a noble fellow. Now what weapon shall you wield? (bow, dagger)
+            - bow
+                - a bit cliche don't you think? Forget it! Here comes an ogre! What will you do? (shoot, run, cry)
+                - shoot
+                    - You single handedly killed all the ogres and save Utopia!
+                - run
+                    - You run like the coward you are, and Utopia is defeated...
+                - cry
+                    - You cry like a baby and the ogre kills you, Utopia is defeated...
+            - dagger
+                - You suck with a dagger and die. Utopia is defeated...
+    - `Dwarf'
+        - Ah yes, you do look a wee bit tiny... Oh sorry, bad habit... Anyway... What weapon shall you use? (gun, hammer)
+            - gun
+                - An ogre approaches, will you shoot it? (shoot, run, be tiny)
+                    -  shoot
+                        -   You shoot the ogre and kill it... what did you expect? guns are cheap... no honor... you couldn't use a more honorable weapon could you? you should really rethink your life. Like seriously. What are you doing playing this game if you want to be a gnome with a gun. Anyway you won... whatever...
+                    - run
+                        -   You run away like the tiny coward you are... Utopia is defeated...
+                    -be tiny
+                        -   You just sit there, the ogre doesn't see you and destroys Utopia...
+            - hammer
+                - Ah! an honorable weapon! Here comes an ogre! What shall you do? (smash, run, be tiny)
+                    -   smash
+                        -   You smash the ogre with a killing blow! Utopia is saved!
+                    - run
+                        -   You run away like the tiny coward you are... Utopia is defeated...
+                    -be tiny
+                        -   You just sit there, the ogre doesn't see you and destroys Utopia...
+
+    - `Gnome`
+        - Ah yes, I can see that by your siz... I mean by your wisdom.. yes wisdom. Which weapon shall you use? (crossbow, mace)
+            - crossbow
+                - Good choice! Here comes an ogre! Quick what shall you do? (shoot, run)
+                    - shoot
+                        -   You shoot the ogre and it dies. Utopia is saved!
+                    - run
+                        -   You run like the coward you are... Utopia is defeated...
+
+            - mace
+                - Uhm... ok... you realize mace was not invented yet? you are defenseless, and you are defeated. Utopia is defeated...
