@@ -32,7 +32,7 @@
             - dagger
                 - You suck with a dagger and die. Utopia is defeated...
     - `Dwarf'
-        - Ah yes, you do look a wee bit tiny... Oh sorry, bad habit... Anyway... What weapon shall you use? (gun, hammer)
+        - Ah yes, spectacularly obvious with that beard of yours! What weapon shall you use? (gun, hammer)
             - gun
                 - An ogre approaches, will you shoot it? (shoot, run, be tiny)
                     -  shoot
