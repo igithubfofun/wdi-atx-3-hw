@@ -6,8 +6,6 @@ function deck_o_cards() {
 
 	// Create the arrays for the deck, and shuffled deck
 	var cards = [];
-  var object = {};
-
 
   // Make 52 card objects and store them in the "cards" array
   for (var i = 0; i < suits.length; i++){
@@ -19,11 +17,14 @@ function deck_o_cards() {
 
 	// Shuffle the Deck
   shuffle(cards);
+
 	// Pull the top card
   var topCard = cards.shift();
+
 	// Console log the results
   console.log(topCard);
 }
+
 deck_o_cards();
 // Fisher-Yates Shuffle
 // http://stackoverflow.com/a/6274398
