@@ -1,4 +1,4 @@
-# Currency Converter
+ # Currency Converter
 
 * [Find the exchange rate between dollars and pounds](http://www.bloomberg.com/quote/GBPUSD:CUR)
 

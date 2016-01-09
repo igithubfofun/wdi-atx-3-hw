@@ -3,20 +3,24 @@ require_relative '../bank'
 
 describe Bank do
 
+bank = Bank.new
+
   describe ".new" do
     it "creates a Bank object" do
       # When Bank.new is called, it should create a bank object
+      bank.name = 'BoA'
+      expect(bank.name).to eq('BoA')
 
     end
     it "has no accounts" do
       # A newly created bank should have 0 accounts
-
+      expect(bank).to eq({})
     end
   end
 
   describe "#name" do
     it "has a name" do
-      # Calling bank.name should give us the bank's name
+      expect(bank.name = "BoA").to eq bank.name
 
     end
   end
@@ -25,6 +29,7 @@ describe Bank do
     it "create an account" do
       # Calling bank.create_account with the correct parameters should add
       # the account name and account value to the bank.accounts hash
+      expect(bank.create_account("BoA", 500)).to eq(create_account("BoA", 500))
 
     end
   end
