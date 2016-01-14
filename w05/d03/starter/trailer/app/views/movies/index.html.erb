@@ -1,6 +1,6 @@
 <h1>List of Movies</h1>
 
 <% @movies.each do |movie| %>
-  <p><%= movie.year%></p><span><%= link_to movie.title, movie_path(movie) %></span>
+  <p><%= movie.year %><span>&nbsp;&nbsp;<%= link_to movie.title, movie_path(movie) %></span></p>
 
 <% end %>

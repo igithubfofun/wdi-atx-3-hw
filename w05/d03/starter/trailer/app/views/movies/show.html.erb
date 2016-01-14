@@ -1,8 +1,12 @@
-<%= @movie.title %>
+<h1><%= @movie.title %></h1>
+<br>
+<%= link_to "Home", movie_path(@movie) %>&nbsp;&nbsp;<span><%= link_to "Delete", movie_path(@movie), method: :delete %></span>
+<br>
+<br>
 <br>
 <iframe id="ytplayer" type="text/html" width="640" height="390"
   src="<%= @movie.poster_url %>" frameborder="0"/>
-<br>
-<%= link_to "Delete", movie_path(@movie), method: :delete %>
+
+
 
 
