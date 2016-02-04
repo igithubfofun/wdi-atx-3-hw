@@ -13,10 +13,6 @@
     "express": "~4.12.4",
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1",
-<<<<<<< HEAD
-    "twilio": "^2.9.0"
-=======
     "twilio": "^3.3.0-edge"
->>>>>>> 5894f6ce2dfa124f249ee30e92f9b502c2f63e42
   }
 }
